@@ -2,50 +2,27 @@
 
 <html>
     <head>
-    
+        <script src="main.js" defer></script>
     </head>
     <body>
+        <div id="acc"></div>
         <div id="display"> </div>
-        <button id="soma">+</button>
-        <button id="numeroUm">1</button>
-        <button id="igual">=</button>
-
-        <script>
-            //objeto calculadora
-            let calculadora = {};
-            calculadora.display = document.querySelector("#display");
-
-            let botaoUm = document.querySelector("#numeroUm");
-            let botaoSoma = document.querySelector("#soma");
-            let botaoIgual = document.querySelector("#igual");
-
-            let acumulador = "";
-            
-            botaoUm.onclick = function() {
-                calculadora.display.innerText += 1;
-            }
-
-            botaoSoma.onclick = function() {
-                acumulador += calculadora.display.innerText;
-                acumulador += " + ";
-                calculadora.display.innerText = "";
-            }
-
-            botaoIgual.onclick = function() {
-                //TODO: checar se existe conteúdo dentro do display
-
-                //colocando conteúdo do display no acumulador
-                acumulador += calculadora.display.innerText;
-                //resolvendo conta (conteúdo acumulador)
-                let resultado = eval(acumulador);
-                //colocando no display o conteúdo do acumulador
-                calculadora.display.innerText = resultado;
-                // limpando o acumulador
-                acumulador = "";
-
-            }
-
-        </script>
+        <button id="sum">+</button>
+        <button id="subtract">-</button>
+        <button id="split">/</button>
+        <button id="multiply">*</button>
+        <button id="numberOne">1</button>
+        <button id="numberTwo">2</button>
+        <button id="numberThree">3</button>
+        <button id="numberFour">4</button>
+        <button id="numberFive">5</button>
+        <button id="numberSix">6</button>
+        <button id="numberSeven">7</button>
+        <button id="numberEigth">8</button>
+        <button id="numberNine">9</button>
+        <button id="numberZero">0</button>
+        <button id="equals">=</button>
+        <input type="number" id="decimals" min="0" max="8" value="2">
 
     </body>
 
