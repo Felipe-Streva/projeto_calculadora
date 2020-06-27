@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <title>Calculator</title>
         <script src="main.js" defer></script>
     </head>
     <body>
-        <div id="acc"></div>
-        <div id="display"> </div>
-        <button id="sum">+</button>
-        <button id="subtract">-</button>
-        <button id="split">/</button>
-        <button id="multiply">*</button>
-        <button id="numberOne">1</button>
-        <button id="numberTwo">2</button>
-        <button id="numberThree">3</button>
-        <button id="numberFour">4</button>
-        <button id="numberFive">5</button>
-        <button id="numberSix">6</button>
-        <button id="numberSeven">7</button>
-        <button id="numberEigth">8</button>
-        <button id="numberNine">9</button>
-        <button id="numberZero">0</button>
-        <button id="equals">=</button>
-        <input type="number" id="decimals" min="0" max="8" value="2">
+        <div class="calculator">
+            <div class="screen">
+                <div id="result"></div>
+                <div id="display"></div>
+            </div>
+            <div class="buttons">
+                <button id="pi">&pi;</button>
+                <button id="sum">+</button>
+                <button id="subtract">-</button>
+                <button id="split">/</button>
+                <button id="multiply">*</button>
+                <button id="numberOne">1</button>
+                <button id="numberTwo">2</button>
+                <button id="numberThree">3</button>
+                <button id="numberOpenParan">(</button>
+                <button id="numberCloseParen">)</button>
+                <button id="numberFour">4</button>
+                <button id="numberFive">5</button>
+                <button id="numberSix">6</button>
+                <button id="sqrt">&radic;</button>
+                <button id="power">^</button>
+                <button id="numberSeven">7</button>
+                <button id="numberEigth">8</button>
+                <button id="numberNine">9</button>
+                <button id="sin">sin</button>
+                <button id="cos">cos</button>
 
+                <button id="correct"><=</button>
+                <button id="numberZero">0</button>
+                <button id="dot">.</button>
+
+
+                <button id="tan">tan</button>
+                <button id="radDeg">Rad</button>
+                <button id="equals">=</button>
+                <button id="clear">C</button>
+
+
+
+            </div>
+            <div class="decimals">
+                <label for="#decimals">Decimals</label>
+                <input type="range" id="decimals" min="0" max="10" value="2"/>
+                <label for="#decimals" id="label">2</label>
+            </div>
+        </div>
     </body>
 
 </html>
