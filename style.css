@@ -39,6 +39,7 @@ body{
     text-align: center;
     border-radius: 10px;
     font-size: 35px;
+    overflow: hidden;
 }
 
 #display{
@@ -48,6 +49,7 @@ body{
     text-align: center;
     border-radius: 10px;
     font-size: 35px;
+    overflow: hidden;
 }
 
 .buttons{
@@ -67,6 +69,16 @@ button{
 @media (min-width:550px){
     button:nth-child(5n+3){
     margin-right: 20px;
+    }
+}
+
+@media (max-width: 550px){
+    #result{
+        font-size: 15px;
+    }
+
+    #display{
+        font-size: 15px;
     }
 }
 
